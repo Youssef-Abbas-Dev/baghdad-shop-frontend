@@ -1,0 +1,118 @@
+.special-offers {
+    padding: 10px 30px;
+}
+
+.special-offers-title {
+    font-size: 21px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.special-offers-icon-wrapper {
+    color: var(--strong-red-color);
+    margin-right: 10px;
+}
+
+.special-offers-icon-wrapper i {
+    margin-left: 5px;
+}
+
+.special-offers-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.offer {
+    width: 49%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--white-color);
+    margin-bottom: 25px;
+    border-radius: 10px;
+    position: relative;
+    padding: 5px;
+}
+
+.offer-image-wrapper {
+    width: 40%;
+    height: 100%;
+}
+
+.offer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.offer-info {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+}
+
+.offer-title {
+    color: var(--primary-color);
+    font-size: 21px;
+}
+
+.offer-rating {
+    color: var(--white-color);
+    background-color: var(--success-color);
+    padding: 0 4px;
+    border-radius: 7px;
+    margin: 15px 0;
+}
+
+.offer-price-item {
+    font-size: 21px;
+    color: var(--strong-red-color);
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.offer-final-price-item {
+    font-size: 21px;
+    color: var(--primary-color);
+}
+
+
+.offer-discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 24px;
+    background-color: var(--info-color);
+    border-radius: 50px;
+    padding: 0 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .offer-title {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 920px) {
+    .offer {
+        width: 100%;
+    }
+    .offer-title {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 520px) {
+    .special-offers {
+        padding: 15px;
+    }
+}

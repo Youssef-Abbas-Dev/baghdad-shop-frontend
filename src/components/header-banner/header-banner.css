@@ -1,0 +1,29 @@
+.header-banner {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.header-banner-img {
+    width: 49%;
+    height: 300px;
+}
+
+@media (max-width: 920px) {
+    .header-banner {
+        flex-wrap: wrap;
+    }
+
+    .header-banner-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    .header-banner {
+       padding: 15px;
+    }
+}

@@ -1,0 +1,38 @@
+export const specialOffers = [
+    {
+        id: 1,
+        title: "بیونر دی جی سماعه رأس",
+        firstImage:"/images/products/special-offers/s1.jpg",
+        secondImage:"/images/products/special-offers/s2.jpg",
+        price: 50,
+        discount: 30,
+        rating:4.1,
+    },
+    {
+        id: 2,
+        title: "هوکو سماعه الأذن السلکیه",
+        firstImage:"/images/products/special-offers/s3.jpg",
+        secondImage:"/images/products/special-offers/s4.jpg",
+        price: 40,
+        discount: 20,
+        rating:4.1,
+    },
+    {
+        id: 3,
+        title: "سامسونج تابلیت",
+        firstImage:"/images/products/special-offers/s5.jpg",
+        secondImage:"/images/products/special-offers/s6.jpg",
+        price: 200,
+        discount: 40,
+        rating:4.5,
+    },
+    {
+        id: 4,
+        title: "سامسونج هاتف جالاسکی",
+        firstImage:"/images/products/special-offers/s7.jpg",
+        secondImage:"/images/products/special-offers/s8.jpg",
+        price: 550,
+        discount: 20,
+        rating:4.8,
+    },
+]
