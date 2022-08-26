@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./slider.css";
+import Rating from "../rating/Rating";
 
 const Slider = ({ data }) => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -25,17 +27,12 @@ const Slider = ({ data }) => {
         className="slider-wrapper"
       >
         {data.map((item) => (
-          <div className="slide" key={item.id}>
+          <Link to={`/products/${item.id}`} className="slide" key={item.id}>
             <img className="slide-image" src={item.image} alt={item.title} />
             <h3 className="slide-title">{item.title}</h3>
-            <div className="slide-rating-wrapper">
-              <b className="slide-rating">
-                {item.rating} <i className="bi bi-star-fill"></i>
-              </b>
-              <span>{item.reviews} تقییمات</span>
-            </div>
+            <Rating rating={item.rating} reviews={item.reviews} />
             <div className="slide-price">${item.price}</div>
-          </div>
+          </Link>
         ))}
       </div>
       <button

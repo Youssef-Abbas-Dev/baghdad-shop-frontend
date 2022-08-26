@@ -8,7 +8,7 @@
 export const products = [
   {
     id: 1,
-    title: "hp 15-dy58ms ASD",
+    title: "اتش بی الیت بوك الجیل الثانی",
     image: "/images/products/laptops/l1.jpg",
     price: 750,
     rating: 4.5,
@@ -16,7 +16,7 @@ export const products = [
   },
   {
     id: 2,
-    title: "Acer Aspire 3 A315-56-95W",
+    title: "لابتوب ایسر نیترو 515-5",
     image: "/images/products/laptops/l2.jpg",
     price: 600,
     rating: 3.8,
@@ -24,7 +24,7 @@ export const products = [
   },
   {
     id: 3,
-    title: "DELL Inspiron 7307",
+    title: "لابتوب هواوی میت بوک 14",
     image: "/images/products/laptops/l3.jpg",
     price: 800,
     rating: 4.6,
@@ -32,7 +32,7 @@ export const products = [
   },
   {
     id: 4,
-    title: "ASUS W125-855-98 SL",
+    title: "لابتوب جیمنق اسوس - 571GT",
     image: "/images/products/laptops/l4.jpg",
     price: 950,
     rating: 4.1,
@@ -40,7 +40,7 @@ export const products = [
   },
   {
     id: 5,
-    title: "hp 14S-FQ0017NE",
+    title: "لابتوب اسوس تی یو اف 15",
     image: "/images/products/laptops/l1.jpg",
     price: 700,
     rating: 4.5,
@@ -48,7 +48,7 @@ export const products = [
   },
   {
     id: 6,
-    title: "ASUS DD Gaming ASDL",
+    title: "اسوس للالعاب F15",
     image: "/images/products/laptops/l6.jpg",
     price: 990,
     rating: 4.8,
@@ -56,7 +56,7 @@ export const products = [
   },
   {
     id: 7,
-    title: "Lenovo IdeaPad 3 15IMLO5",
+    title: "لینوفو ایدیا باد فلکس 5 شاشه 14",
     image: "/images/products/laptops/l7.jpg",
     price: 500,
     rating: 4.2,
@@ -64,7 +64,7 @@ export const products = [
   },
   {
     id: 8,
-    title: "hp ENVY x360 13-a100",
+    title: "مایکروسوفت سیرفس جو 2 بشاشه لمس",
     image: "/images/products/laptops/l8.jpg",
     price: 850,
     rating: 4.7,
@@ -72,7 +72,7 @@ export const products = [
   },
   {
     id: 9,
-    title: "Microsoft Surface Pro 7+",
+    title: "مایکروسوفت سیرفس برو 8 بشاشه 13",
     image: "/images/products/laptops/l8.jpg",
     price: 900,
     rating: 4.1,
@@ -80,7 +80,7 @@ export const products = [
   },
   {
     id: 10,
-    title: "ASUS ROG stix G15 G513RC-HNO13WG",
+    title: "لابتوب فیفوبوك من اسوس 17",
     image: "/images/products/laptops/l10.jpg",
     price: 680,
     rating: 3.5,
@@ -88,7 +88,7 @@ export const products = [
   },
   {
     id: 11,
-    title: "Apple iPhone 13 Pro",
+    title: "هاتف ابل ایفون 13 الجدید",
     image: "/images/products/mobiles/m1.jpg",
     price: 800,
     rating: 4.9,
@@ -96,7 +96,7 @@ export const products = [
   },
   {
     id: 12,
-    title: "Samsung Galaxy M52 Dual",
+    title: "هاتف سامسونج جالسکی الذکی M33",
     image: "/images/products/mobiles/m2.jpg",
     price: 350,
     rating: 4.5,
@@ -104,7 +104,7 @@ export const products = [
   },
   {
     id: 13,
-    title: "Samsung Galaxy J887 DL",
+    title: "جوال سامسونج جالسکی ام 32 شریحتی الاتصال",
     image: "/images/products/mobiles/m3.jpg",
     price: 200,
     rating: 3.5,
@@ -112,7 +112,7 @@ export const products = [
   },
   {
     id: 14,
-    title: "OnePlus Nord CE 2",
+    title: "جوال بوکو اکس 4 برو",
     image: "/images/products/mobiles/m4.jpg",
     price: 250,
     rating: 4.5,
@@ -120,7 +120,7 @@ export const products = [
   },
   {
     id: 15,
-    title: "Samsung Dual Note",
+    title: "سامسونج جالسکی اف ای الجیل الرابع",
     image: "/images/products/mobiles/m5.jpg",
     price: 290,
     rating: 3.0,
@@ -128,7 +128,7 @@ export const products = [
   },
   {
     id: 16,
-    title: "OnePlus 10 Pro Dual SIM Black",
+    title: "فیفو ایکس دی اس 256 ازرق",
     image: "/images/products/mobiles/m6.jpg",
     price: 750,
     rating: 5,
@@ -136,7 +136,7 @@ export const products = [
   },
   {
     id: 17,
-    title: "Apple iPhone 13 128GB Blue 5G",
+    title: "جوال ابل ایفون 12 الجدید",
     image: "/images/products/mobiles/m7.jpg",
     price: 700,
     rating: 4.5,
@@ -144,7 +144,7 @@ export const products = [
   },
   {
     id: 18,
-    title: "Samsung C5 128GB Black",
+    title: "هاتف ذکی ثنائی شرائح",
     image: "/images/products/mobiles/m8.jpg",
     price: 500,
     rating: 4.5,
@@ -152,7 +152,7 @@ export const products = [
   },
   {
     id: 19,
-    title: "Motorola Moto G31 Baby Blue 4GB",
+    title: "جوال شاومی بوکو سی 40",
     image: "/images/products/mobiles/m9.jpg",
     price: 470,
     rating: 4.0,
@@ -160,7 +160,7 @@ export const products = [
   },
   {
     id: 20,
-    title: "Samsung Galaxy NotePad S12",
+    title: "جوال سامسوج جالسکی الذکی M52",
     image: "/images/products/mobiles/m10.jpg",
     price: 850,
     rating: 5,
@@ -168,7 +168,7 @@ export const products = [
   },
   {
     id: 21,
-    title: "Nokia A12",
+    title: "نوکیا A12",
     image: "/images/products/mobiles/m11.jpg",
     price: 40,
     rating: 4.1,
@@ -176,7 +176,7 @@ export const products = [
   },
   {
     id: 22,
-    title: "Samsung Galaxy A13 Dual SIM 4GB",
+    title: "سامسونج جالسکی ام 13 لایت بنظام",
     image: "/images/products/mobiles/m12.jpg",
     price: 620,
     rating: 5,
@@ -184,7 +184,7 @@ export const products = [
   },
   {
     id: 23,
-    title: "Xiaomi Redmi Note 11",
+    title: "هاتف هواوی نوفا 9",
     image: "/images/products/mobiles/m13.jpg",
     price: 250,
     rating: 3.5,
@@ -192,7 +192,7 @@ export const products = [
   },
   {
     id: 24,
-    title: "Samsung Galaxy A32 Daul SIM Awesome",
+    title: "الهاتف الذکی جالسکی ام 32 الجیل الخامس",
     image: "/images/products/mobiles/m14.jpg",
     price: 320,
     rating: 4.1,
