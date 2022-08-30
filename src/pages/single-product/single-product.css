@@ -75,6 +75,7 @@
 .product-description-title {
     font-size: 25px;
     color: var(--primary-color);
+    display: block;
 }
 
 /* Media Queries */

@@ -1,3 +1,28 @@
+.empty-cart {
+    padding: 30px;
+    height: calc(100vh - 250px);
+}
+
+.empty-cart h1 {
+    font-size: 32px;
+    color: #000;
+}
+
+.empty-cart p {
+    font-size: 21px;
+    font-weight: 500;
+    color: var(--gray-color);
+    margin: 15px 0;
+}
+
+.empty-cart-link {
+    font-size: 30;
+    color: blue;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Cart */
 .cart {
     padding: 30px;
 }

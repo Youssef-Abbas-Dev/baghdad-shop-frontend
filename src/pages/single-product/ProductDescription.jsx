@@ -1,7 +1,7 @@
 const ProductDescription = () => {
   return (
     <p className="product-description">
-      <h4 className="product-description-title">حول هذه السلعة</h4>
+      <strong className="product-description-title">حول هذه السلعة</strong>
       صوت فائق: استمتع بصوت واضح وراحة فائقة مع سماعات رأس ستوديو مونيتور من ون
       اوديو. تتمتع سماعة الرأس بمشغلات كبيرة بحجم 50 ملم مع مغانط من
       النيوديميوم، حيث يشكل الجهير القوي والصوت الواضح والنغمات العالية النقية

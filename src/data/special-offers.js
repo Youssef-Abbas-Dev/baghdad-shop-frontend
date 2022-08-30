@@ -1,6 +1,6 @@
 export const specialOffers = [
     {
-        id: 1,
+        id: 100,
         title: "بیونر دی جی سماعه رأس",
         firstImage:"/images/products/special-offers/s1.jpg",
         secondImage:"/images/products/special-offers/s2.jpg",
@@ -16,7 +16,7 @@ export const specialOffers = [
         reviews: "4,521",
     },
     {
-        id: 2,
+        id: 101,
         title: "هوکو سماعه الأذن",
         firstImage:"/images/products/special-offers/s3.jpg",
         secondImage:"/images/products/special-offers/s4.jpg",
@@ -32,7 +32,7 @@ export const specialOffers = [
         reviews: "1,870",
     },
     {
-        id: 3,
+        id: 102,
         title: "سامسونج تابلیت",
         firstImage:"/images/products/special-offers/s5.jpg",
         secondImage:"/images/products/special-offers/s6.jpg",
@@ -46,7 +46,7 @@ export const specialOffers = [
         reviews: "584",
     },
     {
-        id: 4,
+        id: 103,
         title: "سامسونج هاتف جالاسکی",
         firstImage:"/images/products/special-offers/s7.jpg",
         secondImage:"/images/products/special-offers/s8.jpg",

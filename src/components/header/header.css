@@ -100,11 +100,26 @@
     color: var(--white-color);
     font-weight: 500;
     cursor: pointer;
+    position: relative;
 }
 
 .middle-header-shopping-cart .bi-cart3 {
     font-size: 32px;
     margin-right: 10px;
+}
+
+.cart-notification {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-red-color);
 }
 
 /* Navbar */
