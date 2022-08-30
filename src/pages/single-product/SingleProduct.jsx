@@ -1,22 +1,23 @@
 import { useParams } from "react-router-dom";
-import { useState,useEffect } from "react";
+import { useEffect } from "react";
 import Rating from "../../components/rating/Rating";
 import "./single-product.css";
 import ProductDescription from "./ProductDescription";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchSingleProduct } from "../../redux/apiCalls/productApiCall";
+import Spinner from "../../components/spinner/Spinner";
 
 const SingleProduct = () => {
   const { id } = useParams();
- 
-  const [product, setProduct] = useState(null);
+
+  const dispatch = useDispatch();
+  const { product, loading } = useSelector((state) => state.product);
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      const response = await fetch(`http://localhost:5000/products/${id}`);
-      const data = await response.json();
-      setProduct(data);
-    };
-    fetchProducts();
+    dispatch(fetchSingleProduct(id));
   }, [id]);
+
+  if (loading) return <Spinner />;
 
   return (
     <div className="single-product">
@@ -35,7 +36,7 @@ const SingleProduct = () => {
           </div>
         </div>
       </div>
-       <ProductDescription />
+      <ProductDescription />
     </div>
   );
 };

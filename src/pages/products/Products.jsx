@@ -1,24 +1,22 @@
 import ProductList from "./ProductList";
 import "./products.css";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import ProductSidebar from "./ProductSidebar";
 import Pagination from "./Pagination";
 import Spinner from "../../components/spinner/Spinner";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchProducts } from "../../redux/apiCalls/productApiCall";
 
 const Products = () => {
+  const dispatch = useDispatch();
+  const { products,loading } = useSelector((state) => state.product);
+
   const [sortItem, setSortItem] = useState("select");
   const [filterItem, setFilterItem] = useState("all");
   const [currentPage, setCurrentPage] = useState(4);
 
-  const [products, setProducts] = useState([]);
-
   useEffect(() => {
-    const fetchProducts = async () => {
-      const response = await fetch("http://localhost:5000/products");
-      const data = await response.json();
-      setProducts(data);
-    };
-    fetchProducts();
+    dispatch(fetchProducts());
   }, []);
 
   // Filter Product
@@ -45,9 +43,8 @@ const Products = () => {
   const finishIndex = currentPage * PRODUCT_PER_PAGE;
 
   const orderedProducts = sortedProductList.slice(startIndex, finishIndex);
-   
 
-  if(products.length === 0) return <Spinner />
+  if (loading) return <Spinner />;
 
   return (
     <>

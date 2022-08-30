@@ -4,18 +4,16 @@ import SpecialOffers from "../../components/special-offers/SpecialOffers";
 import Brands from "../../components/brands/Brands";
 import Category from "../../components/category/Category";
 import HeaderBanner from "../../components/header-banner/HeaderBanner";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { fetchProducts } from "../../redux/apiCalls/productApiCall";
+import { useSelector, useDispatch } from "react-redux";
 
 const Home = () => {
-  const [products, setProducts] = useState([]);
+  const dispatch = useDispatch();
+  const { products } = useSelector((state) => state.product);
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      const response = await fetch("http://localhost:5000/products");
-      const data = await response.json();
-      setProducts(data);
-    };
-    fetchProducts();
+    dispatch(fetchProducts());
   }, []);
 
   const laptops = products.filter((p) => p.isLaptop === true);
