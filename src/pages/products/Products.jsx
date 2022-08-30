@@ -1,23 +1,73 @@
 import ProductList from "./ProductList";
-import SelectBox from "./SelectBox";
-import { products } from "../../data/products";
 import "./products.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import ProductSidebar from "./ProductSidebar";
+import Pagination from "./Pagination";
+import Spinner from "../../components/spinner/Spinner";
 
 const Products = () => {
-    const [sortItem,setSortItem] = useState("select");
-    
-    const sortedProductList = 
-       sortItem === "low" 
-       ? products.sort((a,b) => a.price - b.price)
-       : sortItem === "high" ? products.sort((a,b) => b.price - a.price)
-       : products.sort((a,b) => a.title > b.title ? 1 : -1);
+  const [sortItem, setSortItem] = useState("select");
+  const [filterItem, setFilterItem] = useState("all");
+  const [currentPage, setCurrentPage] = useState(4);
 
-    return ( 
-    <section className="products">
-        <SelectBox setSortItem={setSortItem} sortItem={sortItem} />
-        <ProductList products={sortedProductList} />
-    </section> );
-}
- 
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const response = await fetch("http://localhost:5000/products");
+      const data = await response.json();
+      setProducts(data);
+    };
+    fetchProducts();
+  }, []);
+
+  // Filter Product
+  const filteredProduct = products.filter((p) =>
+    filterItem === "laptop"
+      ? p.isLaptop === true
+      : filterItem === "mobile"
+      ? p.isLaptop === false
+      : p
+  );
+
+  // Sort Product
+  const sortedProductList =
+    sortItem === "low"
+      ? filteredProduct.sort((a, b) => a.price - b.price)
+      : sortItem === "high"
+      ? filteredProduct.sort((a, b) => b.price - a.price)
+      : filteredProduct.sort((a, b) => (a.title > b.title ? 1 : -1));
+
+  // Pagnination
+  const PRODUCT_PER_PAGE = 3;
+  const pages = Math.ceil(sortedProductList.length / PRODUCT_PER_PAGE);
+  const startIndex = (currentPage - 1) * PRODUCT_PER_PAGE;
+  const finishIndex = currentPage * PRODUCT_PER_PAGE;
+
+  const orderedProducts = sortedProductList.slice(startIndex, finishIndex);
+   
+
+  if(products.length === 0) return <Spinner />
+
+  return (
+    <>
+      <section className="products">
+        <ProductSidebar
+          setSortItem={setSortItem}
+          sortItem={sortItem}
+          filterItem={filterItem}
+          setFilterItem={setFilterItem}
+          setCurrentPage={setCurrentPage}
+        />
+        <ProductList products={orderedProducts} />
+      </section>
+      <Pagination
+        pages={pages}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
+    </>
+  );
+};
+
 export default Products;

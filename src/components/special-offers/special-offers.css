@@ -122,4 +122,13 @@
     .special-offers {
         padding: 15px;
     }
+
+    .offer-title {
+        font-size: 17px;
+        margin-top: 30px;
+    }
+
+    .offer-discount {
+        font-size: 18px;
+    }
 }

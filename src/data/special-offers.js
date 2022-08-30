@@ -17,7 +17,7 @@ export const specialOffers = [
     },
     {
         id: 2,
-        title: "هوکو سماعه الأذن السلکیه",
+        title: "هوکو سماعه الأذن",
         firstImage:"/images/products/special-offers/s3.jpg",
         secondImage:"/images/products/special-offers/s4.jpg",
         images: [

@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 const MiddleHeader = () => {
   return (
     <div className="middle-header">
@@ -5,10 +7,10 @@ const MiddleHeader = () => {
         <input type="search" placeholder="ماذا ترید؟" />
         <button className="search-box-btn">ابحث</button>
       </div>
-      <div className="middle-header-shopping-cart">
+      <Link to="/cart" className="middle-header-shopping-cart">
         سله التسوق
         <i className="bi bi-cart3"></i>
-      </div>
+      </Link>
     </div>
   );
 };

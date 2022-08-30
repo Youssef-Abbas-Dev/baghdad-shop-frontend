@@ -47,7 +47,7 @@ const SpecialOffersPage = () => {
         <div className="special-offers-add-to-cart">
             <div>الکمیه</div>
             <input type="number" min="1" max="10" />
-            <button className="add-to-cart-btn">إضافه الی عربه التسوق</button>
+            <button className="add-to-cart-btn">إضافه الی سله التسوق</button>
           </div>
       </div>
     </div>

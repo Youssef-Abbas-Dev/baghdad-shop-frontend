@@ -13,6 +13,7 @@ export const products = [
     price: 750,
     rating: 4.5,
     reviews: "900",
+    isLaptop: true,
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ export const products = [
     price: 600,
     rating: 3.8,
     reviews: "250",
+    isLaptop: true,
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ export const products = [
     price: 800,
     rating: 4.6,
     reviews: "1,200",
+    isLaptop: true,
   },
   {
     id: 4,
@@ -37,6 +40,7 @@ export const products = [
     price: 950,
     rating: 4.1,
     reviews: "7,548",
+    isLaptop: true,
   },
   {
     id: 5,
@@ -45,6 +49,7 @@ export const products = [
     price: 700,
     rating: 4.5,
     reviews: "2,200",
+    isLaptop: true,
   },
   {
     id: 6,
@@ -53,6 +58,7 @@ export const products = [
     price: 990,
     rating: 4.8,
     reviews: "5,500",
+    isLaptop: true,
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ export const products = [
     price: 500,
     rating: 4.2,
     reviews: "850",
+    isLaptop: true,
   },
   {
     id: 8,
@@ -69,6 +76,7 @@ export const products = [
     price: 850,
     rating: 4.7,
     reviews: "8,200",
+    isLaptop: true,
   },
   {
     id: 9,
@@ -77,6 +85,7 @@ export const products = [
     price: 900,
     rating: 4.1,
     reviews: "1,895",
+    isLaptop: true,
   },
   {
     id: 10,
@@ -85,6 +94,7 @@ export const products = [
     price: 680,
     rating: 3.5,
     reviews: "8,124",
+    isLaptop: true,
   },
   {
     id: 11,
@@ -93,6 +103,7 @@ export const products = [
     price: 800,
     rating: 4.9,
     reviews: "8,240",
+    isLaptop: false,
   },
   {
     id: 12,
@@ -101,6 +112,7 @@ export const products = [
     price: 350,
     rating: 4.5,
     reviews: "9,014",
+    isLaptop: false,
   },
   {
     id: 13,
@@ -109,6 +121,7 @@ export const products = [
     price: 200,
     rating: 3.5,
     reviews: "7,784",
+    isLaptop: false,
   },
   {
     id: 14,
@@ -117,6 +130,7 @@ export const products = [
     price: 250,
     rating: 4.5,
     reviews: "2,401",
+    isLaptop: false,
   },
   {
     id: 15,
@@ -125,6 +139,7 @@ export const products = [
     price: 290,
     rating: 3.0,
     reviews: "420",
+    isLaptop: false,
   },
   {
     id: 16,
@@ -133,6 +148,7 @@ export const products = [
     price: 750,
     rating: 5,
     reviews: "1,500",
+    isLaptop: false,
   },
   {
     id: 17,
@@ -141,6 +157,7 @@ export const products = [
     price: 700,
     rating: 4.5,
     reviews: "4,540",
+    isLaptop: false,
   },
   {
     id: 18,
@@ -149,6 +166,7 @@ export const products = [
     price: 500,
     rating: 4.5,
     reviews: "17,124",
+    isLaptop: false,
   },
   {
     id: 19,
@@ -157,6 +175,7 @@ export const products = [
     price: 470,
     rating: 4.0,
     reviews: "4,700",
+    isLaptop: false,
   },
   {
     id: 20,
@@ -165,6 +184,7 @@ export const products = [
     price: 850,
     rating: 5,
     reviews: "2,300",
+    isLaptop: false,
   },
   {
     id: 21,
@@ -173,6 +193,7 @@ export const products = [
     price: 40,
     rating: 4.1,
     reviews: "850",
+    isLaptop: false,
   },
   {
     id: 22,
@@ -181,6 +202,7 @@ export const products = [
     price: 620,
     rating: 5,
     reviews: "7,500",
+    isLaptop: false,
   },
   {
     id: 23,
@@ -189,6 +211,7 @@ export const products = [
     price: 250,
     rating: 3.5,
     reviews: "1,784",
+    isLaptop: false,
   },
   {
     id: 24,
@@ -197,5 +220,6 @@ export const products = [
     price: 320,
     rating: 4.1,
     reviews: "8,102",
+    isLaptop: false,
   },
 ];
